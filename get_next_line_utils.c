@@ -15,6 +15,9 @@ size_t  ft_strlen(const char *s)
 char    *ft_strchr(const char *s, int c)
 {
 	int	i;
+	
+	if (!s) // Return NULL if s is NULL
+        return (NULL);
 
 	i = 0;
 	while (s[i] != '\0')
